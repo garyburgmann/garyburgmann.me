@@ -1,0 +1,36 @@
+body {
+  min-height: 90vh;
+}
+
+.cover {
+  background: url("/static/webapp/img/office.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 100%;
+  color: white;
+}
+
+.base-nav {
+  color: white !important;
+  font-size: 18px;
+}
+
+.base-nav:hover {
+  background-color: brown;
+}
+
+.layer {
+  background-color: rgba(19, 18, 18, 0.5);
+}
+
+.layer p {
+  font-size: 36px;
+}
+
+#header-name {
+  font-weight: bold;
+  font-size: 72px;
+}
+
+hr {
+  border-top: 4px solid white;
+}
