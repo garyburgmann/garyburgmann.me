@@ -3,7 +3,7 @@ body {
 }
 
 .cover {
-  background: url("/static/img/office.jpg") no-repeat center;
+  background: url("/static/webapp/img/office.jpg") no-repeat center;
   background-size: cover;
   min-height: 100%;
   color: white;
