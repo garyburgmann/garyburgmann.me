@@ -1,8 +1,29 @@
 {% extends "webapp/layouts/base.html" %}
+{% load static %}
+
+{% block headers %}
+  <link rel="stylesheet" type="text/css" href="{% static 'webapp/css/index.css' %}" />
+{% endblock %}
 
 {% block title %}
   Home
 {% endblock %}
 
 {% block body %}
+
+<div id="index-text">
+
+  <p>
+    This site was deployed 01-09-2018. Soon, it will be a blog with tutorials 
+    about all the stuff I had to find out for myself the hard way on the way 
+    to becoming a programmer. There is no final destination but only more 
+    learning, and hopefully my experiences can help my fellow padawans.
+  </p>
+
+  <p>
+    Until then ..... <a href="/about" >About Me</a>
+  </p>
+
+</div>
+
 {% endblock %}

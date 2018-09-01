@@ -8,6 +8,9 @@ body {
   min-height: 100%;
   color: white;
 }
+ .nav {
+   padding: 0 36px !important;
+ }
 
 .base-nav {
   color: white !important;
@@ -15,7 +18,7 @@ body {
 }
 
 .base-nav:hover {
-  background-color: brown;
+  background-color: rgb(47, 89, 145);
 }
 
 .layer {
