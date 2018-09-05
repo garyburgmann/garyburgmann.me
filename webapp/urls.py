@@ -1,9 +1,9 @@
 # webapp/urls.py
 from django.urls import path
 
-from .views import IndexPageView, AboutPageView
+from . import views
 
 urlpatterns = [
-    path('about', AboutPageView.as_view(), name='about'),
-    path('', IndexPageView.as_view(), name='index'),
+    # path('about', views.about_page_view, name='about'),
+    path('', views.index_page_view, name='index'),
 ]

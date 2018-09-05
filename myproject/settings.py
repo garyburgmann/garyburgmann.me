@@ -138,3 +138,9 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 AUTH_USER_MODEL = 'core.CustomUser'
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'  # gmail specific - check other providers for details
+EMAIL_HOST_USER = os.getenv('EMAIL_ADDRESS')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_PASSWORD')
+EMAIL_PORT = 587

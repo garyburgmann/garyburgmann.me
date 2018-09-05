@@ -11,19 +11,76 @@
 
 {% block body %}
 
-<div id="index-text">
+<div id="home" class="container-light">
+  <div class="section-text">
 
-  <p>
-    This site was deployed 01-09-2018. Soon, it will be a blog with tutorials 
-    about all the stuff I had to find out for myself the hard way on the way 
-    to becoming a programmer. There is no final destination but only more 
-    learning, and hopefully my experiences can help my fellow padawans.
-  </p>
+    <p>
+      This site was deployed 01-09-2018. Soon, it will be a blog with tutorials 
+      about all the stuff I had to find out for myself the hard way on the way 
+      to becoming a programmer. There is no final destination but only more 
+      learning, and hopefully my experiences can help my fellow padawans.
+    </p>
 
-  <p>
-    Until then ..... <a href="/about" >About Me</a>
-  </p>
+    <p>
+      Until then ..... <a href="#about" >About Me</a>
+    </p>
 
+  </div>
 </div>
+
+<div id="about" class="container-dark">
+  <div class="section-text">
+
+    <p>
+      Gary Burgmann is a student software engineer and currently has a job working with Angular and Laravel. He really loves building his own projects with Python, Django, NodeJS and ReactJS on the side.
+    </p>
+    <p class="text-center">
+      You can find more information regarding all things Gary at: 
+    </p>
+    <p class="text-center">
+      <a class="fab fa-gitlab social-link" href="https://gitlab.com/garyburgmann"> GitLab </a> &nbsp;
+      <a class="fab fa-github social-link" href="https://github.com/garyburgmann"> GitHub</a> &nbsp;
+      <a class="fab fa-linkedin social-link" href="https://www.linkedin.com/in/garyburgmann/"> LinkedIn</a> &nbsp;
+    </p>
+
+  </div>
+</div>
+
+<div id="contact" class="container-light container">
+  <div class="section-text row">
+    <div class="col-12 text-center">
+      <p>
+        Get in touch with Gary
+      </p>
+
+      <form action="/" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+          <input name="your_name" type="text" class="form-control" id="id_your_name" placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <input name="your_email" type="email" class="form-control" id="id_your_email" placeholder="Your email">
+          <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+        </div>
+        <div class="form-group">
+          <input name="your_number" type="text" class="form-control" id="id_your_number" placeholder="Your number">
+        </div>
+        <div class="form-group">
+          <textarea name="your_message" rows="5" class="form-control" placeholder="Your message" required="" id="id_your_message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      {% if form_success %}
+      <p class="success-message">
+        Form submitted successfully
+      </p>
+      {% endif %}
+      
+    </div>
+  </div>
+</div>
+
+
 
 {% endblock %}

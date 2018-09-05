@@ -1,13 +1,46 @@
-#index-text {
+.section-text {
   margin: 80px auto;
   max-width: 60vw;
   font-size: 24px;
 }
 
+@media only screen and (min-width: 901px) {
+  #contact {
+    max-width: 50vw;
+    min-width: 500px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
-  #index-text {
+  .section-text {
     margin: 80px auto;
     max-width: 90vw;
     text-align: center;
   }
+}
+
+.container-dark {
+  min-width: 100%;
+  background: rgb(53, 45, 45);
+  color: white;
+  padding: 6px 0;
+}
+
+.container-light {
+  min-width: 100%;
+  background: white;
+  color: rgb(53, 45, 45);
+  padding: 6px 0;
+}
+
+.social-link {
+  color: white;
+}
+
+.about-link {
+  color: rgb(53, 45, 45);
+}
+
+.success-message {
+  color: green;
 }

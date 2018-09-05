@@ -1,0 +1,13 @@
+#index-text {
+  margin: 80px auto;
+  max-width: 60vw;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  #index-text {
+    margin: 80px auto;
+    max-width: 90vw;
+    text-align: center;
+  }
+}
