@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 from .forms import ContactForm
 from myproject.settings import EMAIL_HOST_USER
@@ -21,12 +21,19 @@ def index_page_view(request):
                 EMAIL_HOST_USER,
                 recipients
             )
+            return redirect('/contact')
         else:
             context['form_error'] = True
 
     context['form'] = ContactForm()
 
     return render(request, 'webapp/index.html', context)
+
+
+def contact_page_view(request):
+    context = {}
+
+    return render(request, 'webapp/contact.html', context)
 
 
 # def about_page_view(request):

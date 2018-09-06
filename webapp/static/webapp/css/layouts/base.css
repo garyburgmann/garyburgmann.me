@@ -8,8 +8,12 @@ body {
   min-height: 100%;
   color: white;
 }
- .nav {
+ .navbar {
    padding: 0 36px !important;
+ }
+
+ .navbar-toggler {
+   color: white;
  }
 
 .base-nav {

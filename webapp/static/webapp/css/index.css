@@ -1,21 +1,21 @@
 .section-text {
-  margin: 80px auto;
+  margin: 40px auto;
   max-width: 60vw;
   font-size: 24px;
+}
+
+@media only screen and (max-width: 800px) {
+  .section-text {
+    margin: 20px auto;
+    max-width: 90vw;
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 901px) {
   #contact {
     max-width: 50vw;
     min-width: 500px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .section-text {
-    margin: 80px auto;
-    max-width: 90vw;
-    text-align: center;
   }
 }
 
