@@ -15,10 +15,25 @@
   <div class="section-text">
 
     <p>
-      This site was deployed 01-09-2018. Soon, it will be a blog with tutorials 
-      about all the stuff I had to find out for myself the hard way on the way 
-      to becoming a programmer. There is no final destination but only more 
-      learning, and hopefully my experiences can help my fellow padawans.
+      This site was last updated 01-02-2019.
+    </p>
+
+    <p>
+      Currently, most of my work is proprietary,
+      but I look forawrd to sharing my new learnings as I investigate serverless deployments
+      with Zappa and the Serverless framework, the AWS ecosystem (in particular RDS to use 
+      with serverless deployments), managing authentication with third party providers such
+      as Firebase and Auth0, Docker gotchas (e.g. adding secrets to docker-compose...trickier
+      to manage than simple .env files!), and my dive into deep learning (with Udacity).
+    </p>
+
+    <p>
+      Please do not be perturbed by my recent drop in GitHub/GitLab activity. I recently got
+      married (November 2018), so I had a 4-week break and then started working at Griffith where
+      we run a privately hosted GitLab server, logging in with my staff account. Rest assured,
+      I am pushing bucketloads of code every day, I just can't share it with you! I did write a
+      nice little paginator for use with SQL-Alchemy though, perhaps I could learn to deploy that
+      to PyPy and share that process :)
     </p>
 
     <p>
@@ -32,8 +47,33 @@
   <div class="section-text">
 
     <p>
-      Gary Burgmann is a student software engineer and currently has a job working with Angular and Laravel. He really loves building his own projects with Python, Django, NodeJS and ReactJS on the side.
+      Gary Burgmann is a student software engineer and is currently working for Griffith Univeristy's 
+      eResearch team as a developer. His current focus at work is rebuilding a clinical trials
+      application, from Plone to a SPA architecture of ReactJS/Pyramid/MySQL, where his role is to
+      develop the API in Pyramid. It has been an interesting learning experience to apply continous
+      integration with a Docker & Jenkins pipeline. 
     </p>
+
+    <p>
+      He is also developing a web application for the Queensland State Archives to assist
+      in automatic reconstruction of document pieces, using Django as the framework and the
+      JavaScript library Konva for the manipulation of individual pieces where needed. Previously
+      he has also worked as a developer on a large project with an Angular/Laravel/MySQL stack.
+    </p>
+
+    <p>
+      Outside of work, he thoroughly enjoys working within the Django ecosystem and is currently
+      developing two personal projects utilising the framework. He has previously deployed applications
+      to Digital Ocean (including this one!), one of which was a ReactJS/ExpressJS/Mongo stack for
+      his wedding to receive guest RSVPs and provide information for guests. Moving forward, his aim
+      is to utilize serverless deployments with AWS, implementing the Serverless framework for NodeJS
+      or Zappa for Django/Flask projects, a SPA architecture consisting of server-side rendered ReactJS
+      with NextJS, and Amazon's Relational Database Service with Postgres, as his stack of choice. He
+      is also very keen to learn more data science related techniques, having only briefly used SciKit
+      learn modules for high level machine learning tasks in the past, now currently diving into PyTorch
+      with Udacity.
+    </p>
+
     <p class="text-center">
       You can find more information regarding all things Gary at: 
     </p>
@@ -72,7 +112,7 @@
         <div class="form-group">
           <textarea name="your_message" rows="5" class="form-control" placeholder="Your message" id="id_your_message" required></textarea>
         </div>
-        <button type="submit" class="btn btn-dark">Submit</button>
+        <button type="submit" class="btn btn-dark btn-block">Submit</button>
       </form>
 
       {% if form_success %}
