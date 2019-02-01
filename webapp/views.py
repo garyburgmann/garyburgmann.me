@@ -14,13 +14,21 @@ def index_page_view(request):
         if form.is_valid():
             context['form_success'] = True
             recipients = [EMAIL_HOST_USER]
-            recipients.append(form.cleaned_data['your_email'])
-            send_mail(
-                "New contact form submitted by {}".format(form.cleaned_data['your_name']),
-                form.cleaned_data['your_message'],
-                EMAIL_HOST_USER,
-                recipients
-            )
+            if request.POST.get('caught'):
+                send_mail(
+                    "Spam caught from {}".format(form.cleaned_data['your_name']),
+                    form.cleaned_data['your_message'],
+                    EMAIL_HOST_USER,
+                    recipients
+                )
+            else:
+                recipients.append(form.cleaned_data['your_email'])
+                send_mail(
+                    "New contact form submitted by {}".format(form.cleaned_data['your_name']),
+                    form.cleaned_data['your_message'],
+                    EMAIL_HOST_USER,
+                    recipients
+                )
             return redirect('/contact')
         else:
             context['form_error'] = True

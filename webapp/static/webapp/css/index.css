@@ -44,3 +44,7 @@
 .success-message {
   color: green;
 }
+
+#venus {
+  display: None !important;
+}
